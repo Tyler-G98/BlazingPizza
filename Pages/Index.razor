@@ -21,11 +21,11 @@
 
 
 @code {
-    List<PizzaSpecial> specials = new();
+	List<PizzaSpecial> specials = new(); //List of type PizzaSpecial
 
     protected override void OnInitialized()
     {
-        specials.AddRange(new List<PizzaSpecial>
+		specials.AddRange(new List<PizzaSpecial> //populate the list with pizza specials
         {
             new PizzaSpecial { Name = "The Baconatorizor", BasePrice =  11.99M, Description = "It has EVERY kind of bacon", ImageUrl="img/pizzas/bacon.jpg"},
             new PizzaSpecial { Name = "Buffalo chicken", BasePrice =  12.75M, Description = "Spicy chicken, hot sauce, and blue cheese, guaranteed to warm you up", ImageUrl="img/pizzas/meaty.jpg"},
